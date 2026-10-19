@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Batch Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="ecom.Bitm.NinzaHRM.home.Homepage_Test">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="verifyDashboardAfterRefresh"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="verifyDashboardRequiresAuthentication"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="verifyProjectsNavigation"/>
+          <include name="verifyHomePageIsDisplayed" invocation-numbers="0 1 2 3"/>
+          <include name="verifySettingsNavigation"/>
+        </methods>
+      </class> <!-- ecom.Bitm.NinzaHRM.home.Homepage_Test -->
+      <class name="ecom.Bitm.NinzaHRM.login.Loginpage_Test">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="verifyLoginSessionAfterRefresh" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- ecom.Bitm.NinzaHRM.login.Loginpage_Test -->
+      <class name="ecom.Bitm.NinzaHRM.projects.Projects_Test">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifyProjectCannotBeCreatedWithBlankName"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="verifyProjectsPageAfterRefresh"/>
+          <include name="beforeClass"/>
+          <include name="verifySearchProject"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifyDeleteProject"/>
+          <include name="verifyCreateNewProject"/>
+          <include name="verifyEditProject"/>
+          <include name="verifyProjectsPageNavigation"/>
+          <include name="loginBeforeTest"/>
+        </methods>
+      </class> <!-- ecom.Bitm.NinzaHRM.projects.Projects_Test -->
+      <class name="ecom.Bitm.NinzaHRM.settings.Settings_Test">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="verifyGenerateNewToken"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="verifyGenerateTokenButtonDisplayed"/>
+          <include name="verifySettingsPageNavigation"/>
+          <include name="beforeClass"/>
+          <include name="verifyAuthorizationCheckboxesDisplayed"/>
+          <include name="loginBeforeTest"/>
+        </methods>
+      </class> <!-- ecom.Bitm.NinzaHRM.settings.Settings_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Batch Testing] -->

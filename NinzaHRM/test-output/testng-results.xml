@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[TC_001 - Verify login page loads successfully]]>
+    </line>
+    <line>
+      <![CDATA[TC_002 - Verify password field masks entered password]]>
+    </line>
+    <line>
+      <![CDATA[TC_003 - Verify login with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[TC_003 - Verify login with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[TC_003 - Verify login with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[TC_003 - Verify login with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[TC_004, TC_005, TC_006 - Verify login with invalid credentials displays Invalid Credentials alert and blank Credentials and session remains active after refresh]]>
+    </line>
+    <line>
+      <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+    </line>
+    <line>
+      <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+    </line>
+    <line>
+      <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+    </line>
+    <line>
+      <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+    </line>
+    <line>
+      <![CDATA[TC_009 - Verify unauthenticated users cannot access dashboard]]>
+    </line>
+    <line>
+      <![CDATA[TC_010 - Verify navigation from dashboard to Projects page]]>
+    </line>
+    <line>
+      <![CDATA[TC_011 - Verify navigation from dashboard to Settings page]]>
+    </line>
+    <line>
+      <![CDATA[TC_012 - Verify dashboard remains accessible after page refresh]]>
+    </line>
+    <line>
+      <![CDATA[TC_013 - Verify navigation to Projects page]]>
+    </line>
+    <line>
+      <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+    </line>
+    <line>
+      <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+    </line>
+    <line>
+      <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+    </line>
+    <line>
+      <![CDATA[TC_016 - Verify project creation is prevented when project name is blank]]>
+    </line>
+    <line>
+      <![CDATA[TC_017 - Verify Projects page remains accessible after refresh]]>
+    </line>
+    <line>
+      <![CDATA[TC_018 - Verify project search returns the matching project]]>
+    </line>
+    <line>
+      <![CDATA[TC_019 - Verify an existing project can be edited successfully]]>
+    </line>
+    <line>
+      <![CDATA[TC_020 - Verify an existing project can be deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[TC_021 - Verify navigation to Settings page]]>
+    </line>
+    <line>
+      <![CDATA[TC_024 - Verify Generate New Token button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[TC_025 - Verify authorization checkboxes are displayed]]>
+    </line>
+    <line>
+      <![CDATA[TC_026 - Verify a new bearer token can be generated successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-19T13:03:21 IST" name="Batch Testing" finished-at="2026-10-19T13:08:05 IST" duration-ms="283714">
+    <groups>
+      <group name="negative">
+        <method signature="Loginpage_Test.verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" name="verifyLogin" class="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+        <method signature="Homepage_Test.verifyDashboardRequiresAuthentication()[pri:4, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" name="verifyDashboardRequiresAuthentication" class="ecom.Bitm.NinzaHRM.home.Homepage_Test"/>
+        <method signature="Projects_Test.verifyProjectCannotBeCreatedWithBlankName()[pri:4, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyProjectCannotBeCreatedWithBlankName" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+      </group> <!-- negative -->
+      <group name="functional">
+        <method signature="Loginpage_Test.verifyPasswordIsMasked()[pri:2, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" name="verifyPasswordIsMasked" class="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+        <method signature="Loginpage_Test.verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" name="verifyLogin" class="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+        <method signature="Projects_Test.verifyCreateNewProject(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyCreateNewProject" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+        <method signature="Settings_Test.verifyGenerateTokenButtonDisplayed()[pri:4, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" name="verifyGenerateTokenButtonDisplayed" class="ecom.Bitm.NinzaHRM.settings.Settings_Test"/>
+        <method signature="Settings_Test.verifyAuthorizationCheckboxesDisplayed()[pri:5, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" name="verifyAuthorizationCheckboxesDisplayed" class="ecom.Bitm.NinzaHRM.settings.Settings_Test"/>
+        <method signature="Projects_Test.verifySearchProject()[pri:6, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifySearchProject" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+        <method signature="Projects_Test.verifyEditProject()[pri:7, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyEditProject" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+        <method signature="Projects_Test.verifyDeleteProject()[pri:8, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyDeleteProject" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+      </group> <!-- functional -->
+      <group name="system">
+        <method signature="Loginpage_Test.verifyLoginSessionAfterRefresh(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" name="verifyLoginSessionAfterRefresh" class="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+        <method signature="Projects_Test.verifyProjectsPageAfterRefresh()[pri:5, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyProjectsPageAfterRefresh" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+        <method signature="Homepage_Test.verifyDashboardAfterRefresh()[pri:8, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" name="verifyDashboardAfterRefresh" class="ecom.Bitm.NinzaHRM.home.Homepage_Test"/>
+      </group> <!-- system -->
+      <group name="integration">
+        <method signature="Homepage_Test.verifyProjectsNavigation()[pri:6, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" name="verifyProjectsNavigation" class="ecom.Bitm.NinzaHRM.home.Homepage_Test"/>
+        <method signature="Settings_Test.verifyGenerateNewToken()[pri:6, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" name="verifyGenerateNewToken" class="ecom.Bitm.NinzaHRM.settings.Settings_Test"/>
+        <method signature="Homepage_Test.verifySettingsNavigation()[pri:7, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" name="verifySettingsNavigation" class="ecom.Bitm.NinzaHRM.home.Homepage_Test"/>
+      </group> <!-- integration -->
+      <group name="smoke">
+        <method signature="Homepage_Test.verifyHomePageIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" name="verifyHomePageIsDisplayed" class="ecom.Bitm.NinzaHRM.home.Homepage_Test"/>
+        <method signature="Loginpage_Test.verifyLoginPageLoads()[pri:1, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" name="verifyLoginPageLoads" class="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+        <method signature="Projects_Test.verifyProjectsPageNavigation()[pri:1, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" name="verifyProjectsPageNavigation" class="ecom.Bitm.NinzaHRM.projects.Projects_Test"/>
+        <method signature="Settings_Test.verifySettingsPageNavigation()[pri:1, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" name="verifySettingsPageNavigation" class="ecom.Bitm.NinzaHRM.settings.Settings_Test"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-19T13:03:21 IST" name="Test" finished-at="2026-10-19T13:08:05 IST" duration-ms="283714">
+      <class name="ecom.Bitm.NinzaHRM.home.Homepage_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:28 IST" name="beforeClass" finished-at="2026-10-19T13:04:30 IST" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:30 IST" name="beforeMethod" finished-at="2026-10-19T13:04:36 IST" duration-ms="5575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyHomePageIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:36 IST" name="verifyHomePageIsDisplayed" data-provider="loginCredentials" finished-at="2026-10-19T13:04:39 IST" duration-ms="3064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rmgy@9999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:39 IST" name="afterMethod" finished-at="2026-10-19T13:04:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:39 IST" name="beforeMethod" finished-at="2026-10-19T13:04:44 IST" duration-ms="5382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyHomePageIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:44 IST" name="verifyHomePageIsDisplayed" data-provider="loginCredentials" finished-at="2026-10-19T13:04:47 IST" duration-ms="3028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:47 IST" name="afterMethod" finished-at="2026-10-19T13:04:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:47 IST" name="beforeMethod" finished-at="2026-10-19T13:04:54 IST" duration-ms="6269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyHomePageIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:54 IST" name="verifyHomePageIsDisplayed" data-provider="loginCredentials" finished-at="2026-10-19T13:04:57 IST" duration-ms="2930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:57 IST" name="afterMethod" finished-at="2026-10-19T13:04:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:04:57 IST" name="beforeMethod" finished-at="2026-10-19T13:05:03 IST" duration-ms="6266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyHomePageIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:03 IST" name="verifyHomePageIsDisplayed" data-provider="loginCredentials" finished-at="2026-10-19T13:05:06 IST" duration-ms="3066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_007 - Verify homepage dashboard loads after successful login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:06 IST" name="afterMethod" finished-at="2026-10-19T13:05:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:06 IST" name="beforeMethod" finished-at="2026-10-19T13:05:11 IST" duration-ms="5030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDashboardRequiresAuthentication()[pri:4, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:11 IST" name="verifyDashboardRequiresAuthentication" finished-at="2026-10-19T13:05:15 IST" duration-ms="4429" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_009 - Verify unauthenticated users cannot access dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardRequiresAuthentication -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:15 IST" name="afterMethod" finished-at="2026-10-19T13:05:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:15 IST" name="beforeMethod" finished-at="2026-10-19T13:05:21 IST" duration-ms="5216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProjectsNavigation()[pri:6, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:21 IST" name="verifyProjectsNavigation" finished-at="2026-10-19T13:05:24 IST" duration-ms="3574" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_010 - Verify navigation from dashboard to Projects page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProjectsNavigation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:24 IST" name="afterMethod" finished-at="2026-10-19T13:05:24 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:24 IST" name="beforeMethod" finished-at="2026-10-19T13:05:32 IST" duration-ms="7987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySettingsNavigation()[pri:7, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:32 IST" name="verifySettingsNavigation" finished-at="2026-10-19T13:05:36 IST" duration-ms="3247" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_011 - Verify navigation from dashboard to Settings page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySettingsNavigation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:36 IST" name="afterMethod" finished-at="2026-10-19T13:05:36 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:36 IST" name="beforeMethod" finished-at="2026-10-19T13:05:44 IST" duration-ms="7992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDashboardAfterRefresh()[pri:8, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:44 IST" name="verifyDashboardAfterRefresh" finished-at="2026-10-19T13:05:49 IST" duration-ms="5859" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_012 - Verify dashboard remains accessible after page refresh]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:49 IST" name="afterMethod" finished-at="2026-10-19T13:05:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c]" started-at="2026-10-19T13:05:49 IST" name="afterClass" finished-at="2026-10-19T13:05:50 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.NinzaHRM.home.Homepage_Test -->
+      <class name="ecom.Bitm.NinzaHRM.login.Loginpage_Test">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:21 IST" name="beforeSuite" finished-at="2026-10-19T13:03:21 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:21 IST" name="beforeTest" finished-at="2026-10-19T13:03:21 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:22 IST" name="beforeClass" finished-at="2026-10-19T13:03:26 IST" duration-ms="4055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:26 IST" name="beforeMethod" finished-at="2026-10-19T13:03:31 IST" duration-ms="5419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginPageLoads()[pri:1, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:31 IST" name="verifyLoginPageLoads" finished-at="2026-10-19T13:03:31 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_001 - Verify login page loads successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageLoads -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:31 IST" name="afterMethod" finished-at="2026-10-19T13:03:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:31 IST" name="beforeMethod" finished-at="2026-10-19T13:03:37 IST" duration-ms="5250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyPasswordIsMasked()[pri:2, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:37 IST" name="verifyPasswordIsMasked" finished-at="2026-10-19T13:03:37 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_002 - Verify password field masks entered password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordIsMasked -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:37 IST" name="afterMethod" finished-at="2026-10-19T13:03:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:38 IST" name="beforeMethod" finished-at="2026-10-19T13:03:44 IST" duration-ms="5590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:44 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-19T13:03:45 IST" duration-ms="1138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rmgy@9999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_003 - Verify login with valid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:45 IST" name="afterMethod" finished-at="2026-10-19T13:03:45 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:45 IST" name="beforeMethod" finished-at="2026-10-19T13:03:50 IST" duration-ms="4802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:50 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-19T13:03:51 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_003 - Verify login with valid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:51 IST" name="afterMethod" finished-at="2026-10-19T13:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:51 IST" name="beforeMethod" finished-at="2026-10-19T13:03:56 IST" duration-ms="4995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:56 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-19T13:03:58 IST" duration-ms="1384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_003 - Verify login with valid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:58 IST" name="afterMethod" finished-at="2026-10-19T13:03:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:03:58 IST" name="beforeMethod" finished-at="2026-10-19T13:04:03 IST" duration-ms="4895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:03 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-10-19T13:04:04 IST" duration-ms="1340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_003 - Verify login with valid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:04 IST" name="afterMethod" finished-at="2026-10-19T13:04:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:04 IST" name="beforeMethod" finished-at="2026-10-19T13:04:09 IST" duration-ms="5206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginSessionAfterRefresh(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:09 IST" name="verifyLoginSessionAfterRefresh" data-provider="loginData" finished-at="2026-10-19T13:04:12 IST" duration-ms="2613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rmgy@9999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_004, TC_005, TC_006 - Verify login with invalid credentials displays Invalid Credentials alert and blank Credentials and session remains active after refresh]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSessionAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:12 IST" name="afterMethod" finished-at="2026-10-19T13:04:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:12 IST" name="beforeMethod" finished-at="2026-10-19T13:04:18 IST" duration-ms="5808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginSessionAfterRefresh(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:18 IST" name="verifyLoginSessionAfterRefresh" data-provider="loginData" finished-at="2026-10-19T13:04:18 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSessionAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:18 IST" name="afterMethod" finished-at="2026-10-19T13:04:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:18 IST" name="beforeMethod" finished-at="2026-10-19T13:04:23 IST" duration-ms="5091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginSessionAfterRefresh(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:23 IST" name="verifyLoginSessionAfterRefresh" data-provider="loginData" finished-at="2026-10-19T13:04:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rmgyantra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSessionAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:23 IST" name="afterMethod" finished-at="2026-10-19T13:04:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:23 IST" name="beforeMethod" finished-at="2026-10-19T13:04:28 IST" duration-ms="5229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginSessionAfterRefresh(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:28 IST" name="verifyLoginSessionAfterRefresh" data-provider="loginData" finished-at="2026-10-19T13:04:28 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[(blank)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSessionAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:28 IST" name="afterMethod" finished-at="2026-10-19T13:04:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:04:28 IST" name="afterClass" finished-at="2026-10-19T13:04:28 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:08:05 IST" name="afterTest" finished-at="2026-10-19T13:08:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed]" started-at="2026-10-19T13:08:05 IST" name="afterSuite" finished-at="2026-10-19T13:08:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ecom.Bitm.NinzaHRM.login.Loginpage_Test -->
+      <class name="ecom.Bitm.NinzaHRM.projects.Projects_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:05:50 IST" name="beforeClass" finished-at="2026-10-19T13:05:52 IST" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:05:52 IST" name="beforeMethod" finished-at="2026-10-19T13:05:58 IST" duration-ms="5832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:05:58 IST" name="loginBeforeTest" finished-at="2026-10-19T13:05:59 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyProjectsPageNavigation()[pri:1, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:05:59 IST" name="verifyProjectsPageNavigation" finished-at="2026-10-19T13:06:00 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_013 - Verify navigation to Projects page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProjectsPageNavigation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:00 IST" name="afterMethod" finished-at="2026-10-19T13:06:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:00 IST" name="beforeMethod" finished-at="2026-10-19T13:06:05 IST" duration-ms="5698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:05 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:08 IST" duration-ms="2505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyCreateNewProject(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:08 IST" name="verifyCreateNewProject" data-provider="projectData" finished-at="2026-10-19T13:06:12 IST" duration-ms="4338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AutomationProject]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arvind]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Created]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:12 IST" name="afterMethod" finished-at="2026-10-19T13:06:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:12 IST" name="beforeMethod" finished-at="2026-10-19T13:06:17 IST" duration-ms="4994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:17 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:18 IST" duration-ms="1127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyCreateNewProject(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:18 IST" name="verifyCreateNewProject" data-provider="projectData" finished-at="2026-10-19T13:06:22 IST" duration-ms="3181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AutomationProjectQA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arvind]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OnGoing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:22 IST" name="afterMethod" finished-at="2026-10-19T13:06:22 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:22 IST" name="beforeMethod" finished-at="2026-10-19T13:06:26 IST" duration-ms="4935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:27 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:28 IST" duration-ms="1071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyCreateNewProject(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:28 IST" name="verifyCreateNewProject" data-provider="projectData" finished-at="2026-10-19T13:06:31 IST" duration-ms="3183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AutomationProjectDev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arvind]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Completed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_015 - Verify a new project can be created with valid data]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:31 IST" name="afterMethod" finished-at="2026-10-19T13:06:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:31 IST" name="beforeMethod" finished-at="2026-10-19T13:06:36 IST" duration-ms="5524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:36 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:37 IST" duration-ms="1100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyProjectCannotBeCreatedWithBlankName()[pri:4, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:37 IST" name="verifyProjectCannotBeCreatedWithBlankName" finished-at="2026-10-19T13:06:38 IST" duration-ms="996" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_016 - Verify project creation is prevented when project name is blank]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProjectCannotBeCreatedWithBlankName -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:38 IST" name="afterMethod" finished-at="2026-10-19T13:06:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:38 IST" name="beforeMethod" finished-at="2026-10-19T13:06:43 IST" duration-ms="4927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:43 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:44 IST" duration-ms="1082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyProjectsPageAfterRefresh()[pri:5, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:44 IST" name="verifyProjectsPageAfterRefresh" finished-at="2026-10-19T13:06:45 IST" duration-ms="1041" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_017 - Verify Projects page remains accessible after refresh]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProjectsPageAfterRefresh -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:45 IST" name="afterMethod" finished-at="2026-10-19T13:06:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:45 IST" name="beforeMethod" finished-at="2026-10-19T13:06:51 IST" duration-ms="5819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:51 IST" name="loginBeforeTest" finished-at="2026-10-19T13:06:52 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifySearchProject()[pri:6, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:52 IST" name="verifySearchProject" finished-at="2026-10-19T13:06:57 IST" duration-ms="4195" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_018 - Verify project search returns the matching project]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:57 IST" name="afterMethod" finished-at="2026-10-19T13:06:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:06:57 IST" name="beforeMethod" finished-at="2026-10-19T13:07:02 IST" duration-ms="5003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:02 IST" name="loginBeforeTest" finished-at="2026-10-19T13:07:03 IST" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyEditProject()[pri:7, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:03 IST" name="verifyEditProject" finished-at="2026-10-19T13:07:08 IST" duration-ms="5088" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_019 - Verify an existing project can be edited successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyEditProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:08 IST" name="afterMethod" finished-at="2026-10-19T13:07:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:08 IST" name="beforeMethod" finished-at="2026-10-19T13:07:13 IST" duration-ms="4858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:13 IST" name="loginBeforeTest" finished-at="2026-10-19T13:07:14 IST" duration-ms="1073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyDeleteProject()[pri:8, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:14 IST" name="verifyDeleteProject" finished-at="2026-10-19T13:07:29 IST" duration-ms="15006" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_020 - Verify an existing project can be deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:29 IST" name="afterMethod" finished-at="2026-10-19T13:07:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9]" started-at="2026-10-19T13:07:29 IST" name="afterClass" finished-at="2026-10-19T13:07:29 IST" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.NinzaHRM.projects.Projects_Test -->
+      <class name="ecom.Bitm.NinzaHRM.settings.Settings_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:29 IST" name="beforeClass" finished-at="2026-10-19T13:07:32 IST" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:32 IST" name="beforeMethod" finished-at="2026-10-19T13:07:40 IST" duration-ms="8080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:40 IST" name="loginBeforeTest" finished-at="2026-10-19T13:07:41 IST" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifySettingsPageNavigation()[pri:1, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:41 IST" name="verifySettingsPageNavigation" finished-at="2026-10-19T13:07:41 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_021 - Verify navigation to Settings page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySettingsPageNavigation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:41 IST" name="afterMethod" finished-at="2026-10-19T13:07:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:41 IST" name="beforeMethod" finished-at="2026-10-19T13:07:47 IST" duration-ms="5703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:47 IST" name="loginBeforeTest" finished-at="2026-10-19T13:07:49 IST" duration-ms="1837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyGenerateTokenButtonDisplayed()[pri:4, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:49 IST" name="verifyGenerateTokenButtonDisplayed" finished-at="2026-10-19T13:07:49 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_024 - Verify Generate New Token button is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyGenerateTokenButtonDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:49 IST" name="afterMethod" finished-at="2026-10-19T13:07:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:49 IST" name="beforeMethod" finished-at="2026-10-19T13:07:55 IST" duration-ms="6464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:55 IST" name="loginBeforeTest" finished-at="2026-10-19T13:07:56 IST" duration-ms="996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyAuthorizationCheckboxesDisplayed()[pri:5, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:56 IST" name="verifyAuthorizationCheckboxesDisplayed" finished-at="2026-10-19T13:07:56 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_025 - Verify authorization checkboxes are displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationCheckboxesDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:56 IST" name="afterMethod" finished-at="2026-10-19T13:07:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:07:56 IST" name="beforeMethod" finished-at="2026-10-19T13:08:03 IST" duration-ms="6072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:08:03 IST" name="loginBeforeTest" finished-at="2026-10-19T13:08:04 IST" duration-ms="1012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyGenerateNewToken()[pri:6, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:08:04 IST" name="verifyGenerateNewToken" finished-at="2026-10-19T13:08:04 IST" duration-ms="915" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_026 - Verify a new bearer token can be generated successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyGenerateNewToken -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:08:04 IST" name="afterMethod" finished-at="2026-10-19T13:08:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471]" started-at="2026-10-19T13:08:04 IST" name="afterClass" finished-at="2026-10-19T13:08:05 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ecom.Bitm.NinzaHRM.settings.Settings_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Batch Testing -->
+</testng-results>

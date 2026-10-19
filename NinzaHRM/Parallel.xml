@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing">
+  <test thread-count="5" name="Test" parallel="classes">
+        <classes>
+      <class name="ecom.Bitm.NinzaHRM.login.Loginpage_Test"/>
+      <class name="ecom.Bitm.NinzaHRM.home.Homepage_Test"></class>
+      <class name="ecom.Bitm.NinzaHRM.projects.Projects_Test"></class>
+      <class name="ecom.Bitm.NinzaHRM.settings.Settings_Test"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

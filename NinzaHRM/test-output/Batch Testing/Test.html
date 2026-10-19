@@ -1,0 +1,431 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 19 13:03:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>283 seconds (283714 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: invalidUser, wrongPassword, Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, rmgy@9999, Success<br/>
+<a href="#Output-2068499906" onClick='toggleBox("Output-2068499906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2068499906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2068499906">
+TC_003 - Verify login with valid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, wrongPassword, Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: rmgyantra, wrongPassword<br/>
+<a href="#Output-994632067" onClick='toggleBox("Output-994632067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994632067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994632067">
+TC_007 - Verify homepage dashboard loads after successful login<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyEditProject()'><b>verifyEditProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-788316339" onClick='toggleBox("Output-788316339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-788316339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-788316339">
+TC_019 - Verify an existing project can be edited successfully<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyDashboardRequiresAuthentication()'><b>verifyDashboardRequiresAuthentication</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br/>
+<a href="#Output-1432687668" onClick='toggleBox("Output-1432687668", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1432687668" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1432687668">
+TC_009 - Verify unauthenticated users cannot access dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: (blank), (blank), Failure<br/>
+<a href="#Output-1262477422" onClick='toggleBox("Output-1262477422", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262477422" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262477422">
+TC_003 - Verify login with valid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginPageLoads()'><b>verifyLoginPageLoads</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br/>
+<a href="#Output-2109219177" onClick='toggleBox("Output-2109219177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2109219177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2109219177">
+TC_001 - Verify login page loads successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyPasswordIsMasked()'><b>verifyPasswordIsMasked</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br/>
+<a href="#Output-708443754" onClick='toggleBox("Output-708443754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-708443754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-708443754">
+TC_002 - Verify password field masks entered password<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyAuthorizationCheckboxesDisplayed()'><b>verifyAuthorizationCheckboxesDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test<br/>
+<a href="#Output-1864548849" onClick='toggleBox("Output-1864548849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1864548849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1864548849">
+TC_025 - Verify authorization checkboxes are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyGenerateTokenButtonDisplayed()'><b>verifyGenerateTokenButtonDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test<br/>
+<a href="#Output-1962449837" onClick='toggleBox("Output-1962449837", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1962449837" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1962449837">
+TC_024 - Verify Generate New Token button is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifySettingsPageNavigation()'><b>verifySettingsPageNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test<br/>
+<a href="#Output-715099463" onClick='toggleBox("Output-715099463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-715099463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-715099463">
+TC_021 - Verify navigation to Settings page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyGenerateNewToken()'><b>verifyGenerateNewToken</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test<br/>
+<a href="#Output-1008171342" onClick='toggleBox("Output-1008171342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008171342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008171342">
+TC_026 - Verify a new bearer token can be generated successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@40005471</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: invalidUser, wrongPassword, Failure<br/>
+<a href="#Output-1842881670" onClick='toggleBox("Output-1842881670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1842881670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1842881670">
+TC_003 - Verify login with valid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectsPageNavigation()'><b>verifyProjectsPageNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-1699637904" onClick='toggleBox("Output-1699637904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699637904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699637904">
+TC_013 - Verify navigation to Projects page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectsPageAfterRefresh()'><b>verifyProjectsPageAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-600296216" onClick='toggleBox("Output-600296216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-600296216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-600296216">
+TC_017 - Verify Projects page remains accessible after refresh<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProjectQA, Arvind, OnGoing<br/>
+<a href="#Output-1552767213" onClick='toggleBox("Output-1552767213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1552767213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1552767213">
+TC_015 - Verify a new project can be created with valid data<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, wrongPassword, Failure<br/>
+<a href="#Output-1305002218" onClick='toggleBox("Output-1305002218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1305002218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1305002218">
+TC_003 - Verify login with valid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyDashboardAfterRefresh()'><b>verifyDashboardAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br/>
+<a href="#Output-229318537" onClick='toggleBox("Output-229318537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-229318537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-229318537">
+TC_012 - Verify dashboard remains accessible after page refresh<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: invalidUser, wrongPassword<br/>
+<a href="#Output-281487983" onClick='toggleBox("Output-281487983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-281487983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-281487983">
+TC_007 - Verify homepage dashboard loads after successful login<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, rmgy@9999, Success<br/>
+<a href="#Output-218654115" onClick='toggleBox("Output-218654115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-218654115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-218654115">
+TC_004, TC_005, TC_006 - Verify login with invalid credentials displays Invalid Credentials alert and blank Credentials and session remains active after refresh<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifySearchProject()'><b>verifySearchProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-1264696" onClick='toggleBox("Output-1264696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1264696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1264696">
+TC_018 - Verify project search returns the matching project<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyDeleteProject()'><b>verifyDeleteProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-251788397" onClick='toggleBox("Output-251788397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-251788397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-251788397">
+TC_020 - Verify an existing project can be deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectCannotBeCreatedWithBlankName()'><b>verifyProjectCannotBeCreatedWithBlankName</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br/>
+<a href="#Output-1327718030" onClick='toggleBox("Output-1327718030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327718030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327718030">
+TC_016 - Verify project creation is prevented when project name is blank<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifySettingsNavigation()'><b>verifySettingsNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br/>
+<a href="#Output-1690796457" onClick='toggleBox("Output-1690796457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1690796457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1690796457">
+TC_011 - Verify navigation from dashboard to Settings page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProjectDev, Arvind, Completed<br/>
+<a href="#Output-1213626151" onClick='toggleBox("Output-1213626151", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1213626151" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1213626151">
+TC_015 - Verify a new project can be created with valid data<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: (blank), (blank)<br/>
+<a href="#Output-1017997535" onClick='toggleBox("Output-1017997535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1017997535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1017997535">
+TC_007 - Verify homepage dashboard loads after successful login<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: (blank), (blank), Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@229f66ed</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: rmgyantra, rmgy@9999<br/>
+<a href="#Output-505756829" onClick='toggleBox("Output-505756829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-505756829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-505756829">
+TC_007 - Verify homepage dashboard loads after successful login<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProject, Arvind, Created<br/>
+<a href="#Output-1707179576" onClick='toggleBox("Output-1707179576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1707179576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1707179576">
+TC_015 - Verify a new project can be created with valid data<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyProjectsNavigation()'><b>verifyProjectsNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br/>
+<a href="#Output-780566650" onClick='toggleBox("Output-780566650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-780566650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-780566650">
+TC_010 - Verify navigation from dashboard to Projects page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@77c2494c</td></tr>
+</table><p>
+</body>
+</html>

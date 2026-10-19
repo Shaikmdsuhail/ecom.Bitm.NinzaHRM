@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 16 12:10:22 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>359 seconds (359060 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyProjectsNavigation()'><b>verifyProjectsNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, wrongPassword, Failure</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyDashboardRequiresAuthentication()'><b>verifyDashboardRequiresAuthentication</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test</td>
+<td></td>
+<td>5</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectsPageElements()'><b>verifyProjectsPageElements</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, wrongPassword, Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyPasswordIsMasked()'><b>verifyPasswordIsMasked</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifySettingsNavigation()'><b>verifySettingsNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginPageLoads()'><b>verifyLoginPageLoads</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyDeleteProject()'><b>verifyDeleteProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>14</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyTokenLifespanDropdownDisplayed()'><b>verifyTokenLifespanDropdownDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifySearchProject()'><b>verifySearchProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyGenerateNewToken()'><b>verifyGenerateNewToken</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: invalidUser, wrongPassword, Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectsPageNavigation()'><b>verifyProjectsPageNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: rmgyantra, wrongPassword</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: (blank), (blank), Failure</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyEditProject()'><b>verifyEditProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>4</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyGenerateTokenButtonDisplayed()'><b>verifyGenerateTokenButtonDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: (blank), (blank), Failure</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectsPageAfterRefresh()'><b>verifyProjectsPageAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyDashboardMenusAreDisplayed()'><b>verifyDashboardMenusAreDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProjectQA, Arvind, OnGoing</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: invalidUser, wrongPassword</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyDashboardAfterRefresh()'><b>verifyDashboardAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test</td>
+<td></td>
+<td>7</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyBearerTokenFieldDisplayed()'><b>verifyBearerTokenFieldDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifyAuthorizationCheckboxesDisplayed()'><b>verifyAuthorizationCheckboxesDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLoginSessionAfterRefresh()'><b>verifyLoginSessionAfterRefresh</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, rmgy@9999, Success</td>
+<td></td>
+<td>4</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: (blank), (blank)</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProjectDev, Arvind, Completed</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: invalidUser, wrongPassword, Failure</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyProjectCannotBeCreatedWithBlankName()'><b>verifyProjectCannotBeCreatedWithBlankName</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.settings.Settings_Test.verifySettingsPageNavigation()'><b>verifySettingsPageNavigation</b><br>Test class: ecom.Bitm.NinzaHRM.settings.Settings_Test</td>
+<td></td>
+<td>0</td>
+<td>ecom.Bitm.NinzaHRM.settings.Settings_Test@fbd1f6</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.login.Loginpage_Test.verifyLogin()'><b>verifyLogin</b><br>Test class: ecom.Bitm.NinzaHRM.login.Loginpage_Test<br>Parameters: rmgyantra, rmgy@9999, Success</td>
+<td></td>
+<td>1</td>
+<td>ecom.Bitm.NinzaHRM.login.Loginpage_Test@f5958c9</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.home.Homepage_Test.verifyHomePageIsDisplayed()'><b>verifyHomePageIsDisplayed</b><br>Test class: ecom.Bitm.NinzaHRM.home.Homepage_Test<br>Parameters: rmgyantra, rmgy@9999</td>
+<td></td>
+<td>3</td>
+<td>ecom.Bitm.NinzaHRM.home.Homepage_Test@6f03482</td></tr>
+<tr>
+<td title='ecom.Bitm.NinzaHRM.projects.Projects_Test.verifyCreateNewProject()'><b>verifyCreateNewProject</b><br>Test class: ecom.Bitm.NinzaHRM.projects.Projects_Test<br>Parameters: AutomationProject, Arvind, Created</td>
+<td></td>
+<td>2</td>
+<td>ecom.Bitm.NinzaHRM.projects.Projects_Test@9d5509a</td></tr>
+</table><p>
+</body>
+</html>
